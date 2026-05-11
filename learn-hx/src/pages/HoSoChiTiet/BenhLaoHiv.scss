@@ -1,0 +1,78 @@
+.hiv-lao-wrapper {
+  padding: 8px 0;
+
+  .mt-16 {
+    margin-top: 16px;
+  }
+
+  // 1. Style cho Collapse bao ngoài
+  .group-medical-collapse {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px !important;
+    background-color: #ffffff !important;
+    overflow: hidden;
+
+    & > .ant-collapse-item {
+      border-bottom: none !important;
+
+      & > .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+        background-color: #fcfcfc !important;
+        border-bottom: 1px solid #d9d9d9 !important;
+
+        .group-header {
+          color: #0000cc;
+          font-size: 15px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc !important;
+        }
+      }
+
+      & > .ant-collapse-content {
+        border-top: none !important;
+        
+        & > .ant-collapse-content-box {
+          padding: 16px 24px !important;
+        }
+      }
+    }
+  }
+
+  // 2. Style cho Nội dung Form bên trong
+  .medical-body {
+    .section-title {
+      color: #000080;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .mt-32 {
+      margin-top: 32px;
+    }
+
+    .field-label {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .field-value {
+      color: #333;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid #a0a0a0 !important;
+      padding-bottom: 6px;
+      min-height: 28px;
+      width: 100%;
+      display: block; 
+    }
+  }
+}

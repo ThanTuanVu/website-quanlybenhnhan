@@ -1,0 +1,146 @@
+// Định nghĩa các biến màu sắc để dễ quản lý
+$primary-blue: #1d39c4;
+$border-color: #d9d9d9;
+$text-secondary: #888;
+$bg-light-blue: #f0f5ff;
+$bg-gray: #fafafa;
+
+.tien-su-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  background: #fff;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid $border-color;
+    background-color: $bg-gray;
+
+    &__title {
+      color: $primary-blue;
+      font-weight: bold;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__icon {
+      color: $primary-blue;
+    }
+  }
+
+  .content-body {
+    padding: 20px;
+
+    .section-title {
+      color: $primary-blue;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+  }
+
+  // Khu vực chỉ số sinh hiệu
+  .vital-item {
+    padding-right: 16px;
+    margin-bottom: 20px;
+
+    &__label {
+      color: $text-secondary;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    &__value {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 4px;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+    }
+  }
+
+  // Khung phân loại sức khỏe
+  .health-classification {
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    padding: 16px;
+    text-align: center;
+    height: 100%;
+
+    &__title {
+      color: $primary-blue;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__divider {
+      border-bottom: 1px solid $primary-blue;
+      margin: 0 auto 16px;
+      width: 80%;
+    }
+
+    &__badge {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #e6f4ff;
+      color: $primary-blue;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px auto;
+    }
+
+    &__date {
+      font-style: italic;
+      color: $text-secondary;
+      font-size: 13px;
+    }
+  }
+
+  // Tùy chỉnh Table Ant Design
+  .medical-table {
+    margin-top: 10px;
+
+    :global {
+      .ant-table-thead > tr > th {
+        background-color: $bg-light-blue !important;
+        color: $primary-blue;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Style cho các Tag trạng thái (Status)
+.status-tag {
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+  min-width: 100px;
+  display: inline-block;
+
+  &--stable {
+    color: #1d39c4; background-color: #f0f5ff; border: 1px solid #adc6ff;
+  }
+  &--treating {
+    color: #d46b08; background-color: #fff7e6; border: 1px solid #ffd591;
+  }
+  &--recovered {
+    color: #389e0d; background-color: #f6ffed; border: 1px solid #b7eb8f;
+  }
+}

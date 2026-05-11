@@ -1,0 +1,49 @@
+.table-doituong {
+  .ant-table {
+    border: 1px solid #d9d9d9;
+  }
+
+  // HEADER
+  .ant-table-thead > tr > th {
+    background-color: #cfe2f3;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #d9d9d9 !important;
+  }
+
+  // CỘT ĐỐI TƯỢNG MÀU VÀNG
+  .ant-table-thead > tr > th:nth-child(3) {
+    background-color: #f9cb9c;
+  }
+
+  // BODY
+  .ant-table-tbody > tr > td {
+    border: 1px solid #d9d9d9 !important;
+  }
+
+  // FOOTER
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .left {
+      font-size: 14px;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .ant-pagination {
+        margin: 0;
+      }
+
+      .ant-select {
+        width: 100px;
+      }
+    }
+  }
+}

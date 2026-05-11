@@ -1,0 +1,483 @@
+.dieu-tri-benh-nhan-wrapper {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding-top: 16px;
+
+  /* --- 1. TAB CHÍNH (TOP) --- */
+  .main-tabs-container {
+    display: flex;
+    padding: 0 16px;
+    
+    .main-tab {
+      padding: 10px 24px;
+      background-color: #ffffff;
+      color: #333;
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 4px 4px 0 0;
+      margin-right: 4px;
+      border: 1px solid #e8e8e8;
+      border-bottom: none;
+
+      &.active {
+        background-color: #1890ff;
+        color: #ffffff;
+        border-color: #1890ff;
+      }
+    }
+  }
+
+  /* --- KHUNG NỘI DUNG CHÍNH --- */
+  .main-content {
+    background-color: #ffffff;
+    margin: 0 16px 16px 16px;
+    border: 1px solid #e8e8e8;
+    border-top: 2px solid #1890ff;
+  }
+
+  /* --- 2. FILTER SECTION --- */
+  .filter-section {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+
+    .filter-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 4px;
+    }
+  }
+
+  /* --- 3. THÔNG TIN BỆNH NHÂN --- */
+  .patient-info-section {
+    border-bottom: 1px solid #f0f0f0;
+
+    .ant-collapse-header {
+      padding: 12px 24px !important;
+      align-items: center;
+
+      .custom-collapse-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        .title {
+          color: #1890ff;
+          font-weight: 600;
+          font-size: 15px;
+        }
+
+        .detail-text {
+          color: #1890ff;
+          font-size: 13px;
+        }
+      }
+
+      .ant-collapse-arrow {
+        color: #1890ff !important;
+      }
+    }
+
+    .ant-collapse-content-box {
+      padding: 0 24px 24px 24px !important;
+
+      .info-item {
+        margin-bottom: 12px;
+        font-size: 14px;
+        display: flex;
+
+        .info-label {
+          font-weight: 600;
+          color: #333;
+          width: 180px;
+          flex-shrink: 0;
+        }
+
+        .info-value {
+          color: #666;
+        }
+      }
+    }
+  }
+
+  /* --- 4. SUB TABS (TRẠNG THÁI) --- */
+  .sub-tabs-container {
+    padding: 16px 24px 0 24px;
+
+    .status-tabs {
+      .ant-tabs-nav {
+        margin-bottom: 16px;
+      }
+
+      .ant-tabs-tab {
+        border-radius: 4px !important;
+        margin-right: 8px !important;
+        background-color: #ffffff;
+        border: 1px solid #d9d9d9;
+        
+        &.ant-tabs-tab-active {
+          background-color: #1890ff;
+          border-color: #1890ff;
+
+          .ant-tabs-tab-btn {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* --- 5. BẢNG DANH SÁCH --- */
+  .table-section {
+    padding: 0 24px 24px 24px;
+
+    .ant-table {
+      .ant-table-thead > tr > th {
+        background-color: #e6f0fa !important;
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .ant-pagination {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+
+      .ant-pagination-total-text {
+        margin-right: auto;
+        color: #555;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+.clickable-row {
+  cursor: pointer;
+  
+  &:hover > td {
+    background-color: #fafafa !important;
+  }
+}
+
+.selected-row {
+  cursor: pointer;
+  
+  & > td {
+    background-color: #e6f7ff !important;
+  }
+}
+
+.clickable-row {
+  cursor: pointer;
+  &:hover > td { background-color: #fafafa !important; }
+}
+.selected-row {
+  cursor: pointer;
+  & > td { background-color: #e6f7ff !important; }
+}
+
+
+// LAYOUT KHÁM BỆNH (TAB 2)
+.kham-benh-layout {
+  padding: 16px 24px;
+  background-color: #f9f9f9;
+
+  .kb-info-block {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    .kb-block-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid #f0f0f0;
+
+      .kb-title {
+        color: #1890ff;
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+
+    .kb-row-data {
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #333;
+
+      .label-bold {
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      .flex-align-center {
+        display: flex;
+        align-items: center;
+      }
+
+      .ant-input-group-addon {
+        background-color: #fafafa;
+        cursor: pointer;
+      }
+    }
+  }
+
+// Cụm Tabs khám bệnh lồng bên trong
+  .kb-form-section {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+
+    .kb-inner-tabs {
+      .ant-tabs-nav {
+        margin-bottom: 0;
+        
+        .ant-tabs-tab {
+          border-radius: 0;
+          background-color: #fafafa;
+          border-top: none;
+          
+          &.ant-tabs-tab-active {
+            background-color: #1890ff;
+            .ant-tabs-tab-btn { color: #ffffff !important; }
+          }
+        }
+      }
+
+      .kb-form-content {
+        padding: 24px;
+
+        .kb-section-title {
+          color: #1890ff;
+          font-weight: 600;
+          font-size: 14px;
+          margin-bottom: 12px;
+          margin-top: 0;
+        }
+
+        .kb-input-label {
+          color: #555;
+          font-size: 13px;
+          margin-bottom: 6px;
+        }
+
+        .mt-24 { margin-top: 24px; }
+        .mb-0 { margin-bottom: 0; }
+        .suffix-input {
+          .ant-input {
+            color: #333;
+          }
+          .ant-input-suffix {
+            color: #bfbfbf;
+            font-size: 12px;
+          }
+        }
+
+        .diagnosis-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12px;
+        }
+
+        .diagnosis-table {
+          border: 1px solid #e8e8e8;
+          border-radius: 4px;
+          overflow: hidden;
+
+          .ant-table-thead > tr > th {
+            background-color: #e6f0fa !important;
+            color: #333;
+            font-weight: 600;
+            border-bottom: 1px solid #e8e8e8;
+          }
+          
+          .ant-radio-wrapper {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .kb-footer-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 24px;
+
+    .ant-btn {
+      flex: 1;
+      height: 40px;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+
+    .btn-light-blue {
+      background-color: #1890ff;
+      border-color: #1890ff;
+      &:hover { background-color: #40a9ff; border-color: #40a9ff; }
+    }
+
+    .btn-blue {
+      background-color: #0050b3;
+      border-color: #0050b3;
+      &:hover { background-color: #003a8c; border-color: #003a8c; }
+    }
+  }
+
+  .kb-link {
+    color: #1890ff;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+// TAB CHỈ ĐỊNH (BÊN TRONG KHÁM BỆNH)
+.tab-chi-dinh {
+  .mt-24 { margin-top: 24px; }
+  .mt-16 { margin-top: 16px; }
+
+  .cd-section-title {
+    color: #1890ff; 
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .cd-table-container {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .service-type-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 16px;
+
+    .service-tab-item {
+      padding: 6px 16px;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      background-color: #ffffff;
+      color: #1890ff;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: #1890ff;
+      }
+
+      &.active {
+        background-color: #1890ff;
+        color: #ffffff;
+        border-color: #1890ff;
+      }
+    }
+  }
+
+  .custom-blue-table {
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ant-table-thead > tr > th {
+      background-color: #e6f0fa !important;
+      color: #333;
+      font-weight: 600;
+      padding: 10px 8px !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 8px !important;
+      
+      .ant-select-selector {
+        padding: 0 4px !important;
+        background-color: transparent !important;
+      }
+      .ant-select-selection-item {
+        color: #333;
+      }
+    }
+  }
+}
+
+/* ========================================================
+   TAB TOA THUỐC
+   ======================================================== */
+.tab-toa-thuoc {
+  .mt-24 { margin-top: 24px; }
+  .mt-16 { margin-top: 16px; }
+  .mb-12 { margin-bottom: 12px; }
+
+  // Các nút chọn loại đơn
+  .prescription-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Tùy chỉnh bảng nhập liệu kê đơn (ẩn border của Input bên trong)
+  .med-input-table {
+    .ant-table-tbody > tr > td {
+      padding: 0 !important; // Xóa padding để input chiếm trọn ô
+      
+      .ant-input, .ant-select-selector {
+        border-radius: 0;
+        border: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        height: 32px; // Chiều cao vừa vặn với row
+      }
+      .ant-select-selection-item {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .text-danger {
+    color: red;
+    margin-right: 4px;
+  }
+
+  // Căn lề và màu Tổng tiền
+  .total-price-row {
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    
+    .highlight-price {
+      color: #1890ff;
+      font-size: 15px;
+    }
+  }
+
+  // Link Lời dặn / Tái khám
+  .kb-link-bold {
+    color: #1890ff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Tùy chỉnh Modal Tái Khám */
+.ant-modal-footer {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}

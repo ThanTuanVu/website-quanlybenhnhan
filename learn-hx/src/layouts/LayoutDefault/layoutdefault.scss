@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  background: #184AEB;
+  border-bottom: 1px solid #ddd;
+}
+
+.header__logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.header__logo--collapse {
+  width: 60px;
+}
+
+.header__nav {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.header__nav-left {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header__nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-right img {
+  width: 30px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-right: 12px;
+}
+
+.header__nav-right p {
+  color: #fff;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.header__avatar {
+  cursor: pointer;
+  background-color: #87d068;
+  transition: opacity 0.3s ease;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.header__collapse {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header__search {
+  cursor: pointer;
+}
+
+.content {
+  padding: 10px 20px;
+}
+
+.header__breadcrumb .ant-breadcrumb-link {
+  color: #fff !important;
+}
+
+.header__breadcrumb .ant-breadcrumb-separator {
+  color: #fff !important;
+}
+
+.header__breadcrumb .ant-breadcrumb > span:last-child {
+  color: #fff !important;
+}

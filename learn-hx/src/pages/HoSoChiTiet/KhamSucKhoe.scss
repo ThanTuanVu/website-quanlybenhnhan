@@ -1,0 +1,71 @@
+.kham-suc-khoe-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* =========================================
+     1. STYLE CHO KHỐI TÌM KIẾM
+     ========================================= */
+  .filter-box {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+
+    .ant-input-affix-wrapper,
+    .ant-select-selector,
+    .ant-picker {
+      border-radius: 4px;
+    }
+  }
+
+  /* =========================================
+     2. STYLE CHO KHỐI BẢNG
+     ========================================= */
+  .table-box {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    // Thanh tiêu đề của bảng "KHÁM SỨC KHỎE"
+    .table-header {
+      padding: 16px;
+      border-bottom: 1px solid #d9d9d9;
+      color: #0000cc;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      
+      .anticon {
+        font-size: 18px;
+        margin-right: 8px;
+      }
+    }
+
+    // Ghi đè Style của Table
+    .ant-table {
+      .ant-table-thead > tr > th {
+        background-color: #f0f5ff; // Nền xanh nhạt
+        color: #000080;            // Chữ xanh đậm
+        font-weight: 700;
+        border-bottom: 1px solid #d9d9d9;
+        
+        // Ẩn vạch kẻ dọc phân cách
+        &::before {
+          display: none !important;
+        }
+      }
+
+      .ant-table-tbody > tr > td {
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .ant-table-tbody > tr:last-child > td {
+        border-bottom: none;
+      }
+    }
+  }
+}

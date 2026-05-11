@@ -1,0 +1,109 @@
+.lich-su-kham-wrapper {
+  background-color: #ffffff;
+  border-top: 1px solid #f0f0f0;
+
+  .mt-16 { margin-top: 16px; }
+  .mt-24 { margin-top: 24px; }
+
+// 1. STYLE CỘT TRÁI (SIDEBAR TREE)
+  .lsk-sidebar {
+    border-right: 1px solid #e8e8e8;
+    padding: 16px 8px 16px 16px;
+    min-height: 500px;
+
+    .lsk-sidebar-title {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 16px;
+      padding-left: 8px;
+    }
+
+    // Tùy chỉnh Antd Tree
+    .lsk-tree {
+      background: transparent;
+
+      .ant-tree-switcher {
+        width: 16px;
+      }
+
+      .ant-tree-node-content-wrapper {
+        padding: 4px 8px;
+        &:hover {
+          background-color: transparent;
+          color: #1890ff;
+        }
+
+        &.ant-tree-node-selected {
+          background-color: transparent !important;
+          color: #1890ff;
+          font-weight: 500;
+        }
+      }
+
+      .tree-parent-node {
+        line-height: 1.4;
+        .tree-date {
+          font-weight: 500;
+        }
+        .tree-facility {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+// 2. STYLE CỘT PHẢI (CONTENT)
+  .lsk-content {
+    padding: 16px 24px 24px 32px;
+
+    .lsk-section-title {
+      color: #1890ff;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+
+    .info-row {
+      margin-bottom: 8px;
+      color: #333;
+      line-height: 1.5;
+
+      .label {
+        font-weight: 600;
+        margin-right: 4px;
+      }
+    }
+
+    // Style cho phần Lời dặn cuối cùng
+    .lsk-advice {
+      font-size: 14px;
+      .advice-label {
+        color: #1890ff;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+      .advice-content {
+        font-weight: 600;
+        color: #333;
+      }
+    }
+
+    .custom-blue-table {
+      border-radius: 4px;
+      overflow: hidden;
+
+      .ant-table-thead > tr > th {
+        background-color: #e6f0fa !important;
+        color: #333;
+        font-weight: 600;
+        padding: 10px 8px !important;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .ant-table-tbody > tr > td {
+        padding: 8px !important;
+      }
+    }
+  }
+}

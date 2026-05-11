@@ -1,0 +1,491 @@
+.chi-tiet-kcb-wrapper {
+  // Style cho khối Header
+  .kcb-header-card {
+    background-color: #f7f7f9;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  // Style cho Tabs
+  .kcb-detail-tabs {
+    .ant-tabs-nav {
+      margin-bottom: 24px;
+
+      &::before {
+        border-bottom: 1px solid #d9d9d9;
+      }
+    }
+
+    .ant-tabs-tab {
+      font-size: 15px;
+      font-weight: 500;
+      color: #666;
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: #0000cc;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0000cc;
+      height: 3px !important;
+    }
+  }
+
+  .tab-content-kcb {
+    padding: 8px 16px;
+
+    .section-title {
+      color: #000080;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .mt-32 {
+      margin-top: 32px;
+    }
+
+    .field-label {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .field-value {
+      color: #333;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid #d9d9d9;
+      min-height: 28px;
+    }
+  }
+}
+
+// SCSS Xét Nghiệm
+.tab-content-xet-nghiem {
+  padding: 8px 0;
+
+  .group-xet-nghiem-collapse {
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px !important;
+    overflow: hidden;
+
+    & > .ant-collapse-item {
+      border-bottom: none;
+
+      & > .ant-collapse-header {
+        background-color: #f0f5ff;
+        color: #0000cc;
+        padding: 12px 16px;
+        align-items: center;
+
+        .group-header {
+          font-size: 15px;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc;
+        }
+      }
+    }
+  }
+
+  .chi-dinh-list-collapse {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .chi-dinh-item {
+      border: 1px solid #adc6ff !important;
+      border-radius: 12px !important;
+      background-color: #ffffff;
+      margin-bottom: 0 !important;
+
+      & > .ant-collapse-header {
+        padding: 12px 20px !important;
+        color: #000080;
+        font-size: 14px;
+        align-items: center;
+
+        .ant-collapse-arrow {
+          color: #adc6ff;
+        }
+      }
+
+      .ant-collapse-content-box {
+        padding: 16px 20px !important;
+        border-top: 1px solid #f0f0f0;
+      }
+    }
+  }
+}
+
+.ant-collapse {
+  margin-top: 10px;
+}
+
+// SCSS CDHA & TDCN
+.tab-content-cdha {
+  padding: 8px 0;
+
+  .cdha-table-wrapper {
+    margin-bottom: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ant-table-thead > tr > th {
+      background-color: #f0f5ff !important;
+      color: #000080 !important;
+      font-weight: bold !important;
+      text-align: center !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      font-size: 14px;
+    }
+  }
+
+  .cdha-result-detail {
+    .result-collapse {
+      border: 1.5px solid #0000cc;
+      border-radius: 4px;
+      background-color: #f0f5ff;
+
+      .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+
+        .result-header {
+          color: #0000cc;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          font-weight: 700;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc;
+        }
+      }
+
+      .ant-collapse-content-box {
+        padding: 16px 24px !important;
+        border-top: 1px solid #e8e8e8;
+
+        .result-body {
+          color: #333;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+//SCSS phẫu thuật/thủ thuật
+.tab-content-phau-thuat {
+  padding: 8px 0;
+
+  .main-pt-collapse {
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px !important;
+    overflow: hidden;
+
+    & > .ant-collapse-item {
+      border-bottom: none;
+
+      & > .ant-collapse-header {
+        background-color: #ffffff;
+        color: #0000cc;
+        padding: 12px 16px;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+
+        .pt-header {
+          font-size: 15px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc;
+        }
+      }
+
+      & > .ant-collapse-content {
+        border-top: none;
+
+        & > .ant-collapse-content-box {
+          padding: 16px;
+        }
+      }
+    }
+  }
+
+  .pt-table-wrapper {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+
+    .ant-table-thead > tr > th {
+      background-color: #f0f5ff !important;
+      color: #000080 !important;
+      font-weight: bold !important;
+    }
+  }
+
+  .detail-pt-collapse {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px !important;
+    background-color: #ffffff !important;
+    overflow: hidden;
+
+    & > .ant-collapse-item {
+      border-bottom: none !important;
+
+      & > .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+        background-color: #ffffff !important;
+        border-bottom: 1px solid #d9d9d9 !important;
+
+        .detail-header-text {
+          color: #0000cc;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc !important;
+        }
+      }
+
+      & > .ant-collapse-content {
+        border-top: none !important;
+
+        & > .ant-collapse-content-box {
+          padding: 16px 24px !important;
+        }
+      }
+    }
+  }
+
+  .detail-pt-body {
+    .mt-16 {
+      margin-top: 20px;
+    }
+
+    .field-label {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .field-value {
+      color: #333;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid #a0a0a0 !important;
+      padding-bottom: 6px;
+      min-height: 28px;
+      width: 100%;
+      display: block;
+    }
+
+    .ctth-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      color: #333;
+      font-weight: 500;
+      line-height: 1.8;
+
+      li {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+// SCSS hội chuẩn
+.tab-content-hoi-chuan {
+  padding: 8px 0;
+
+  .hoi-chuan-table-wrapper {
+    margin-bottom: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ant-table-thead > tr > th {
+      background-color: #f0f5ff !important;
+      color: #000080 !important;
+      font-weight: bold !important;
+      text-align: center !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      font-size: 14px;
+    }
+  }
+
+  .hoi-chuan-result-detail {
+    .result-collapse {
+      border: 1.5px solid #0000cc;
+      border-radius: 4px;
+      background-color: #ffffff;
+
+      .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+
+        .result-header {
+          color: #0000cc;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          font-weight: 700;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc;
+        }
+      }
+    }
+  }
+}
+
+// SCSS hs pháp lý
+.tab-content-phap-ly {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  // 1. Style cho Collapse bao ngoài
+  .group-phap-ly-collapse {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px !important;
+    background-color: #ffffff !important;
+    overflow: hidden;
+
+    & > .ant-collapse-item {
+      border-bottom: none !important;
+
+      & > .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+        background-color: #ffffff !important;
+        border-bottom: 1px solid #d9d9d9 !important;
+
+        .group-header {
+          color: #0000cc;
+          font-size: 15px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc !important;
+        }
+      }
+
+      & > .ant-collapse-content {
+        border-top: none !important;
+        
+        & > .ant-collapse-content-box {
+          padding: 16px 24px !important;
+        }
+      }
+    }
+  }
+
+  .phap-ly-body {
+    .section-title {
+      color: #000080;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .mt-32 {
+      margin-top: 32px;
+    }
+
+    .field-label {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .field-value {
+      color: #333;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid #a0a0a0 !important;
+      padding-bottom: 6px;
+      min-height: 28px;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+// SCSS đơn thuốc
+.tab-content-don-thuoc {
+  padding: 8px 0;
+
+  .don-thuoc-table-wrapper {
+    margin-bottom: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ant-table-thead > tr > th {
+      background-color: #f0f5ff !important;
+      color: #000080 !important;
+      font-weight: bold !important;
+      text-align: center !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      font-size: 14px;
+    }
+  }
+
+  .don-thuoc-result-detail {
+    .result-collapse {
+      border: 1.5px solid #0000cc;
+      border-radius: 4px;
+      background-color: #ffffff;
+
+      .ant-collapse-header {
+        padding: 12px 16px !important;
+        align-items: center;
+
+        .result-header {
+          color: #0000cc;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          font-weight: 700;
+        }
+
+        .ant-collapse-arrow {
+          color: #0000cc;
+        }
+      }
+    }
+  }
+}

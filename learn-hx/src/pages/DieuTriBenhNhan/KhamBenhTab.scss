@@ -1,0 +1,45 @@
+.kham-benh-tab-wrapper {
+  padding: 24px;
+  .kb-section-title {
+    color: #1890ff;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+  .kb-input-label {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .mt-24 {
+    margin-top: 24px;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .suffix-input {
+    .ant-input {
+      color: #333;
+    }
+    .ant-input-suffix {
+      color: #bfbfbf;
+      font-size: 12px;
+    }
+  }
+  .diagnosis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .kb-link {
+    color: #1890ff;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

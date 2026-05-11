@@ -1,0 +1,140 @@
+.tiem-chung-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+  .filter-box {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+
+    .ant-input-affix-wrapper,
+    .ant-picker {
+      border-radius: 4px;
+    }
+  }
+
+  .table-box {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    .table-header {
+      padding: 16px;
+      border-bottom: 1px solid #d9d9d9;
+      color: #0000cc;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      
+      .anticon {
+        font-size: 18px;
+        margin-right: 8px;
+      }
+    }
+
+    .ant-table {
+      .ant-table-thead > tr > th {
+        background-color: #f0f5ff;
+        color: #000080;
+        font-weight: 700;
+        border-bottom: 1px solid #d9d9d9;
+        
+        &::before {
+          display: none !important;
+        }
+      }
+
+      .ant-table-tbody > tr > td {
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .ant-table-tbody > tr:last-child > td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.tiem-chung-drawer {
+  .ant-drawer-header {
+    background-color: #0000cc !important;
+    border-bottom: none;
+    padding: 16px 24px;
+    
+    .ant-drawer-title {
+      color: #ffffff;
+    }
+
+    .drawer-custom-header {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 600;
+
+      .back-icon {
+        margin-right: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .ant-drawer-body {
+    padding: 32px 24px;
+    background-color: #ffffff;
+
+    .drawer-info-row {
+      display: flex;
+      margin-bottom: 24px;
+      font-size: 14px;
+
+      .drawer-label {
+        width: 40%;
+        font-weight: 700;
+        color: #333;
+
+        .text-danger {
+          color: red;
+          margin-left: 4px;
+        }
+      }
+
+      .drawer-value {
+        width: 60%;
+        color: #333;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .ant-drawer-footer {
+    border-top: none;
+    padding: 16px 24px;
+
+    .drawer-custom-footer {
+      display: flex;
+      justify-content: flex-start;
+
+      .btn-close-drawer {
+        color: #0000cc;
+        border-color: #0000cc;
+        border-radius: 4px;
+        font-weight: 500;
+        
+        &:hover {
+          color: #000080;
+          border-color: #000080;
+        }
+      }
+    }
+  }
+}

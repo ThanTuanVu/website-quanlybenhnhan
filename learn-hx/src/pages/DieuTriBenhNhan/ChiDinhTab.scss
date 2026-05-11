@@ -1,0 +1,82 @@
+.chi-dinh-tab-wrapper {
+  padding: 24px;
+  background-color: #ffffff; // Nền trắng sạch sẽ
+
+  .mt-24 {
+    margin-top: 24px;
+  }
+  .mt-16 {
+    margin-top: 16px;
+  }
+
+  /* Tiêu đề mục màu xanh dương sáng */
+  .cd-section-title {
+    color: #1890ff;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .cd-table-container {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* --- Sub tabs nhóm dịch vụ (Tất cả, Xét nghiệm...) --- */
+  .service-type-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 16px;
+
+    .service-tab-item {
+      padding: 6px 16px;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      background-color: #ffffff;
+      color: #1890ff;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: #1890ff;
+      }
+
+      &.active {
+        background-color: #1890ff;
+        color: #ffffff;
+        border-color: #1890ff;
+      }
+    }
+  }
+
+  /* --- Tùy chỉnh Table có Header xanh nhạt --- */
+  .custom-blue-table {
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ant-table-thead > tr > th {
+      background-color: #e6f0fa !important; // Nền xanh nhạt
+      color: #333;
+      font-weight: 600;
+      padding: 10px 8px !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 8px !important;
+
+      // Khử viền của Select nằm bên trong Table để nhìn thanh thoát hơn
+      .ant-select-selector {
+        padding: 0 4px !important;
+        background-color: transparent !important;
+      }
+      .ant-select-selection-item {
+        color: #333;
+      }
+    }
+  }
+}

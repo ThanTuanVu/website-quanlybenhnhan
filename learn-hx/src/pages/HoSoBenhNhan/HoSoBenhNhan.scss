@@ -1,0 +1,140 @@
+.ho-so-benh-nhan-wrapper {
+  padding: 24px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+
+  .mt-16 {
+    margin-top: 16px;
+  }
+  .mt-24 {
+    margin-top: 24px;
+  }
+
+  // Header Page
+  .hs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .hs-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      h2 {
+        margin: 0;
+        color: #1890ff;
+        font-weight: 700;
+      }
+      .ant-btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+  // Khung Profile
+  .profile-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    .profile-avatar {
+      text-align: center;
+      padding-top: 12px;
+
+      .patient-name {
+        margin: 16px 0 8px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+      }
+      .patient-code {
+        font-size: 14px;
+        padding: 4px 12px;
+      }
+    }
+
+    .profile-info {
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        font-size: 14px;
+        color: #555;
+
+        b {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  // Khung Chi tiết khám bệnh
+  .medical-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    min-height: 100%;
+
+    .ant-tabs-nav {
+      margin-bottom: 24px;
+    }
+
+    .section-block {
+      .section-title {
+        color: #0050b3;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        border-left: 4px solid #1890ff;
+        padding-left: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .info-box {
+        background-color: #fafafa;
+        border: 1px solid #e8e8e8;
+        border-radius: 6px;
+        padding: 12px;
+        height: 100%;
+
+        .box-label {
+          display: block;
+          color: #888;
+          font-size: 13px;
+          margin-bottom: 4px;
+        }
+
+        .box-value {
+          color: #333;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+
+      .diagnosis-box {
+        background-color: #fff1f0;
+        border: 1px solid #ffa39e;
+        border-radius: 6px;
+        padding: 16px;
+
+        .box-label {
+          color: #cf1322;
+          font-weight: 600;
+          margin-bottom: 8px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .empty-record {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+}
